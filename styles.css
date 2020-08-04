@@ -1,0 +1,24 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.first{
+    background-color: blue;
+    height: 100vh;
+    width: 33.3%;
+}
+.second{
+    background-color: cornsilk;
+    height: 100vh;
+    width: 66.7%;
+}
