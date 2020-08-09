@@ -20,7 +20,7 @@ section, aside, article, header, footer{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to right, blue 0%, blue 30%, rgb(20, 20, 20) 30%, rgb(20, 19, 19) 100%);
+    background: linear-gradient(to right, blue 0%, blue 30%, rgb(238, 237, 237) 30%, rgb(241, 239, 239) 100%);
     scroll-snap-align: center;
 
 }
@@ -107,8 +107,15 @@ section, aside, article, header, footer{
     width: 500px;
     margin-top: 100px;
     margin-left: 50px;
-    poeition: absolute;
+    position: absolute;
+    color: #333
 
+}
+.hamburger{
+    margin-left: 800px;
+}
+input{
+    color: white
 }
 .hamburger-menu{
     display: none;
@@ -301,9 +308,8 @@ textarea{
     flex-direction: column;
     justify-content: space-around;
 }
-.container:nth-child(3){
-    
-}
+
+   
 figcaption{
     text-align: center;
 }
@@ -386,8 +392,7 @@ figcaption{
     .container{
         display:grid;
         grid-template-columns: 1fr;
-        justify-content: space-between;
-        background: linear-gradient(to right, rgb(46, 109, 226) 0%, rgb(46, 109, 226) 20%,rgb(214, 211, 211) 20%, rgb(214, 211, 211) 100%);
+        
         scroll-snap-align: center;
         height: fit-content;
     }
@@ -401,6 +406,10 @@ figcaption{
     .container:first-child .row-4{
         display: none
     }
+    .container:nth-child(3){
+        background: rgb(226,225,230);
+        background: linear-gradient(90deg, rgb(195, 199, 199) 0%, rgb(238, 238, 243) 36%, rgb(206, 194, 194) 66%);
+    }
     .row-1 .logo{
         padding: 20px;
         border: 1px solid rgb(230, 224, 224);
@@ -410,7 +419,6 @@ figcaption{
         display: flex;
         justify-content: center;
         align-items: center;
-        position: fixed;
         margin-left: -20px;
 
     } 
@@ -422,7 +430,7 @@ figcaption{
     .container .main .contact-info{
         display: none
     }
-
+   
         .port-image{
             position: relative;
             height: 300px;
@@ -452,17 +460,24 @@ figcaption{
             margin-top: 10px;
         } 
         .hamburger-menu i{
-            font-size: 1.5rem
+            font-size: 1.5rem;
+            color: #333
         }   
         .row-3 .description{
             display: flex;
             justify-content: space-evenly;
             flex-direction: column;
-            margin-left: 40px;
+            margin-left: -40px;
             margin-top: 30px;
-            padding: 10px;
+            padding: 40px;
             width: 300px;
-            overflow: hidden
+            overflow: hidden;
+            color: #333;
+            background: #f5f5f5; 
+            width: 400px;
+            border-top-right-radius: 150px;
+            margin-bottom: -100px
+
         
         }
         .my-name{
@@ -528,6 +543,10 @@ figcaption{
             margin-right: 20px;
             color: white
         }
+        .row-3 .description button:nth-child(2){
+            background: transparent;
+            border: 1px solid #555;
+        }
         
         /* PORTFOLIO */
         .portfolio-main{
@@ -546,6 +565,7 @@ figcaption{
             overflow: hidden;
             border-radius: 10px;
             box-shadow: 4px 4px 10px;
+            margin-bottom: 30px;
         }
         .row-p img{
             height: 200px;
@@ -657,6 +677,7 @@ figcaption{
             padding: 20px
         }
 
+      
     
         
         
