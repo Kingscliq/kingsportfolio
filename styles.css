@@ -356,14 +356,15 @@ figcaption{
 .container:nth-child(3) p{
     height: 30px;
     width: 500px;
-    color: rgb(192, 182, 182);
+    color: #333;
     font-family: 'Montserrat', sans-serif;
     line-height: 2rem; 
     margin-left: 400px;
 }
 .container:nth-child(3) header h1{
     margin-left: 400px;
-    margin-bottom: 50px
+    margin-bottom: 50px;
+    color: #333
 }
 .skills{
     display: flex;
@@ -380,6 +381,9 @@ figcaption{
 }
 .container:nth-child(2) header h1{
     color: #333
+}
+#porfolio h1{
+    font-family: 'Montserrat', sans-serif
 }
 
 /* 
@@ -557,8 +561,11 @@ figcaption{
             margin-left: 400px;
             margin-top: 20px;
             margin-left: 12px;
+
+            
             
         }
+        
         .row-p{
             height: 250px;
             width: 250px;
