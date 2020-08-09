@@ -51,9 +51,7 @@ section, aside, article, header, footer{
     font-size: 2.5rem;
     
 }
-.hamburger-menu{
-    
-}
+
 
 .row-1 .contact-info{
     display: flex;
@@ -107,9 +105,13 @@ section, aside, article, header, footer{
     justify-content: space-evenly;
     flex-direction: column;
     width: 500px;
-    
+    margin-top: 100px;
     margin-left: 50px;
+    poeition: absolute;
 
+}
+.hamburger-menu{
+    display: none;
 }
 .row-3 .description h1{
     font-family: 'Poppins', sans-serif;
@@ -370,6 +372,9 @@ figcaption{
 .main-name{
     
 }
+.container:nth-child(2) header h1{
+    color: #333
+}
 
 /* 
 
@@ -554,7 +559,7 @@ figcaption{
             overflow: scroll;
         }
         .container:nth-child(2) header h1{
-            color: #555
+            color: #333
         }
         
         figcaption{
