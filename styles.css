@@ -299,6 +299,7 @@ textarea{
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 4px 4px 10px;
+    transition: all .67s ease-in
 }
 .row-p img{
     height: 200px;
@@ -328,12 +329,13 @@ figcaption{
     width: 250px;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 4px 4px 10px rgb(49, 45, 45);
+    box-shadow: 4px 4px 10px #888;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 200px;
+    background-color: #f5f5f5;
     
 
 }
@@ -380,6 +382,9 @@ figcaption{
 .main-name{
     
 }
+.skills h1{
+    color: #333
+}
 .container:nth-child(2) header h1{
     color: #333
 }
@@ -393,7 +398,7 @@ figcaption{
 //
 */
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 500px){
     .container{
         display:grid;
         grid-template-columns: 1fr;
@@ -460,13 +465,16 @@ figcaption{
         }   
         .hamburger-menu{
             display: block;
-            position: absolute;
-            margin-left: 300px;
+            position: fixed;
+            margin-left: 400px;
             margin-top: 10px;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 50%
         } 
         .hamburger-menu i{
             font-size: 1.5rem;
-            color: #333
+            color: rgb(255, 255, 255)
         }   
         .row-3 .description{
             display: flex;
@@ -482,7 +490,9 @@ figcaption{
             box-shadow: 4px 4px 10px rgb(211, 220, 226);;
             width: 400px;
             border-top-right-radius: 150px;
-            margin-bottom: -100px
+            margin-bottom: -100px;
+            clip-path: polygon(x y, x y, x y, x y);
+            transition: all 0.5s ease-in;
 
         
         }
@@ -528,6 +538,7 @@ figcaption{
                 font-size: .79rem;
                 line-height: 1.5rem;
                 text-align: justify;
+                transition: all .78s ease-in
 
                 
         }
@@ -623,7 +634,8 @@ figcaption{
             align-items: center;
             margin-top: 12px;
             background-color: #f5f5f5;
-            margin-bottom: 40px
+            margin-bottom: 40px;
+            transition: all 0.5s ease-in-out
             
             
             
